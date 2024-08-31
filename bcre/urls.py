@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include("pages.urls")),
+    path('', include("pages.urls")), #link with the second later of url called pages.
     path('admin/', admin.site.urls),
 ]
