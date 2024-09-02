@@ -121,7 +121,7 @@ USE_TZ = True
 # there will be a folder generated.
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
-STATICFILE_DIRS = [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'bcre/static'),
 ]
 
