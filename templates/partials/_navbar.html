@@ -15,10 +15,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
-            <a class="nav-link" href={% url "index" %}>Home</a>
-            <a class="nav-link" href={% url "about" %}>About</a>
-            <a class="nav-link" href={% url "listings" %}>Featured Listings</a>
-
           {% comment %} make icon active once pressing "/", "about", "listings" {% endcomment %}
           <li {% if '/' == request.path %}
           class="nav-item active mr-3"
@@ -26,6 +22,7 @@
           class="nav-item mr-3"
           {% endif %}
           >
+          <a class="nav-link" href={% url "index" %}>Home</a>
 
           <li {% if 'about' in request.path %}
           class="nav-item active mr-3"
@@ -33,6 +30,7 @@
           class="nav-item mr-3"
           {% endif %}
           >
+          <a class="nav-link" href={% url "about" %}>About</a>
 
           <li {% if 'listings' in request.path %}
           class="nav-item active mr-3"
@@ -40,6 +38,8 @@
           class="nav-item mr-3"
           {% endif %}
           >
+          <a class="nav-link" href={% url "listings" %}>Featured Listings</a>
+
         </ul>
 
         <ul class="navbar-nav ml-auto">
