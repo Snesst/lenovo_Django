@@ -46,11 +46,11 @@
             harum perferendis laborum molestias quia.
           </p>
         </div>
+        {% comment %} fix the top seller on the right side of about page {% endcomment %}
         {% if mvp_realtors %}
         <div class="col-md-4">
           <div class="card">
             {% for realtor in mvp_realtors %}
-
             <img
               class="card-img-top"
               {% comment %} fix realtor img {% endcomment %}
@@ -65,7 +65,6 @@
                 {{realtor.description}}
               </p>
             </div>
-
             {% endfor %}
           </div>
         </div>

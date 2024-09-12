@@ -97,7 +97,7 @@
         {% else %}
         <div class="col-md-12">
         <p>No listing Available</p>
-      </div>
+        </div>
         {% endif %}
 
       <div class="row">
@@ -118,7 +118,7 @@
 
             {% comment %} use for loop to gen page numbers {% endcomment %}
             {% for i in listings.paginator.page_range %}
-            {% comment %} {check current page, then change the button color} {% endcomment %}
+            {% comment %} {if current page, highlight button color} {% endcomment %}
             {% if listings.number == i %}
             <li class="page-item active">
               <a class="page-link">{{i}}</a>
